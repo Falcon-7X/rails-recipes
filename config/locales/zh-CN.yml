@@ -5,3 +5,9 @@
 
   admin:
     event_list: 活动列表管理
+
+  activerecord:
+    attributes:
+      event:
+        name: "活动名称"
+        description: "描述"
