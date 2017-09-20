@@ -21,5 +21,8 @@
 
 en:
   event_listing: Event_list
+  hello: "Hi %{name},"
+  hello-backstage: "admin, Hi %{name},"
+
   admin:
     event_listing: Admin Event_list
