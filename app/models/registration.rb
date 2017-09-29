@@ -36,4 +36,7 @@ class Registration < ApplicationRecord
       errors.add(:base, "活动尚未开放报名")
     end
   end
+
+  scope :by_status, ->(s){ where( :status => s ) }
+  scope :by_ticket, ->(t){ where( :ticket_id => t ) }
 end
