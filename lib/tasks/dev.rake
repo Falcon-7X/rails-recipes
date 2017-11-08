@@ -1,3 +1,4 @@
+
 namespace :dev do
   task :fake_event_and_registrations => :environment do
      event = Event.create!( :status => "public", :name => "全栈营 Meetup", :friendly_id => "fullstack-meetup")
