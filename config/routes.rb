@@ -52,4 +52,9 @@ Rails.application.routes.draw do
   get "/faq" => "pages#faq"
 
   resource :user
+
+  require 'sidekiq/web'
+  authenticate :user, lambda { |u| u.is_admin? } do
+    mount Sidekiq::Web => '/sidekiq'
+  end
 end
